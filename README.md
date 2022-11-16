@@ -12,13 +12,13 @@
 
 ## Challenges:
 ### Explorer:
-* 1 ***Differentiable ZNE: Noisy Circuits***
+* 1 ***[Differentiable ZNE: Noisy Circuits](1.%20Differentiable%20ZNE/01_differentiable-zne.ipynb)***
   Build a quantum circuit with noise.
 
 * 2 ***Fourier spectrum of quantum modelss: Build a model***
   We introduce the basics of building quantum models with classical input data.
 
-* 3 ***Gradients: The parameter-shift rule***
+* 3 ***[Gradients: The parameter-shift rule](3.%20Parameter%20Shift/03_parameter_shift.ipynb)***
   Implement your own simple parameter-shift rule for the Pauli rotation gates.
 
 * 4 ***Quantum transforms and noise: Energy dissipation***
