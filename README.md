@@ -1,6 +1,13 @@
 # PennyLane Codecamp 2022
 ### Team: Pizza Kebab
 ---
+## How to Install:
+1. Create a pip environment called `codecamp`:
+``python3 -m venv codecamp``
+2. Activate the environment:
+``source ./codecamp/bin/activate``
+3. Install the required packages from `./requirements.txt`:
+``python3 -m pip install -r ./requirements.txt``
 ## Challenges:
 * 1 ***Differentiable ZNE: Noisy Circuits***
   Build a quantum circuit with noise.
