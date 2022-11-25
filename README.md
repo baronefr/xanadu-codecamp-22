@@ -1,7 +1,5 @@
 # PennyLane Codecamp 2022
 
-<br>
-
 ```markdown
 ### Team: Pizza Kebab
 - RANK: 7/429 teams
@@ -11,9 +9,9 @@
 
 **Members**: Comuz ([Saverio Monaco](https://github.com/SaverioMonaco/)), Linuz ([Francesco Barone](https://github.com/baronefr))
 
----
+<br><br>
 
-## How to Install
+#### How to Install
 1. Create a pip environment called `codecamp`:
 ``python3 -m venv codecamp``
 2. Activate the environment:
