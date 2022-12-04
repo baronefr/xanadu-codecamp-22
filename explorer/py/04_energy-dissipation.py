@@ -1,12 +1,8 @@
 #!/usr/bin/env python3
 
-import functools
 import json
-import math
-import pandas as pd
 import pennylane as qml
 import pennylane.numpy as np
-import scipy
 
 def circuit(circuit_param):
     qml.RY(circuit_param, wires=0)

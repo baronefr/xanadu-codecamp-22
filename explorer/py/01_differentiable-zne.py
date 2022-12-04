@@ -1,5 +1,6 @@
-import json
+#!/usr/bin/env python3
 
+import json
 import pennylane as qml
 import pennylane.numpy as np
 

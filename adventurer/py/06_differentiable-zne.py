@@ -1,10 +1,6 @@
-import functools
 import json
-import math
-import pandas as pd
 import pennylane as qml
 import pennylane.numpy as np
-import scipy
 
 dev_ideal = qml.device("default.mixed", wires=2)  # no noise
 dev_noisy = qml.transforms.insert(qml.DepolarizingChannel, 0.05, position="all")(

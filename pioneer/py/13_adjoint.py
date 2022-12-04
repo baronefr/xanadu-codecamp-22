@@ -1,10 +1,6 @@
-import functools
 import json
-import math
-import pandas as pd
 import pennylane as qml
 import pennylane.numpy as np
-import scipy
 
 def generator_info(operator):
     """Provides the generator of a given operator.

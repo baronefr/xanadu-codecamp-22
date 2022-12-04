@@ -1,10 +1,6 @@
-import functools
 import json
-import math
-import pandas as pd
 import pennylane as qml
 import pennylane.numpy as np
-import scipy
 
 sample = np.array([[0.88645553, 5.84095018],
         [1.76306821, 1.28529014],
