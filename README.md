@@ -9,9 +9,10 @@
 
 **Members**: Comuz ([Saverio Monaco](https://github.com/SaverioMonaco/)), Linuz ([Francesco Barone](https://github.com/baronefr))
 
-<center>
+
+<p align="center">
 <img src='img/badges.png' width="40%">
-</center>
+</p>
 
 <br><br>
 
