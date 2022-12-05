@@ -2,22 +2,16 @@
 
 ```markdown
 ### Team: Pizza Kebab
-- RANK: 7/429 teams
-- SCORE: 4000pt
-- TIME: 141351 mins
+* RANK: 7/429 teams
+* SCORE: 4000pt
+* TIME: 141351 mins
 ```
 
 **Members**: Comuz ([Saverio Monaco](https://github.com/SaverioMonaco/)), Linuz ([Francesco Barone](https://github.com/baronefr))
 
-<br><br>
-
-#### How to Install
-1. Create a pip environment called `codecamp`:
-``python3 -m venv codecamp``
-2. Activate the environment:
-``source ./codecamp/bin/activate``
-3. Install the required packages from `./requirements.txt`:
-``python3 -m pip install -r ./requirements.txt``
+<center>
+<img src='img/badges.png' width="40%">
+</center>
 
 <br><br>
 
@@ -70,3 +64,15 @@
 
 * 15 **Universality: H, T and CNOT decomposition**
   Making use of different equivalences, you will be asked to construct a particular operator simply using H, T and CNOT...
+
+
+
+<br><br>
+
+#### How to Install
+1. Create a pip environment called `codecamp`:
+``python3 -m venv codecamp``
+2. Activate the environment:
+``source ./codecamp/bin/activate``
+3. Install the required packages from `./requirements.txt`:
+``python3 -m pip install -r ./requirements.txt``

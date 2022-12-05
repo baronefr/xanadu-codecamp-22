@@ -19,10 +19,8 @@ def fourier_decomp(layers_params):
     dev = qml.device("default.qubit", wires=4)
 
     def entl(params):
-        # params = list of 4 params
-        #print(params)
         for wire in [0,1,2,3]:
-                qml.RX(params[wire], wires = wire)
+            qml.RX(params[wire], wires = wire)
 
         qml.CNOT(wires = [0,1])
         qml.CNOT(wires = [1,2])
@@ -34,7 +32,6 @@ def fourier_decomp(layers_params):
         """
         This function is the quantum circuit made of alternating entangling layers and rotations representing our quantum model
         """
-        # Put your code here #
         last_idx = len(layers_params) - 1
 
         for idx, ii in enumerate(layers_params):
@@ -51,14 +48,6 @@ def fourier_decomp(layers_params):
     corr = 4
     partial_circuit = functools.partial(circuit, layers_params)
     coeffs = qml.fourier.coefficients(partial_circuit, 1, corr, lowpass_filter=True)
-    #print(coeffs)
-
-    freqs = qml.fourier.circuit_spectrum(circuit)()
-    for k, v in freqs.items():
-        print('  EEEEH', k, ":", v)
-    
-    drawer = qml.draw(circuit, show_all_wires=True)
-    print(drawer(layers_params, 7))
 
     reordered = []
     # do -4, ..., -1
