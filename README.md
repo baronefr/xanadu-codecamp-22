@@ -19,58 +19,58 @@
 ## Challenges
 
 ### Explorer
-* 1 ***[Differentiable ZNE: Noisy Circuits](1.%20Differentiable%20ZNE/01_differentiable-zne.ipynb)***
+* 1 ***[Differentiable ZNE: Noisy Circuits](1_explorer/01_differentiable-zne.ipynb)***
   Build a quantum circuit with noise.
 
-* 2 ***Fourier spectrum of quantum modelss: Build a model***
+* 2 ***[Fourier spectrum of quantum modelss: Build a model](1_explorer/02_fourier-spectrum.ipynb)***
   We introduce the basics of building quantum models with classical input data.
 
-* 3 ***[Gradients: The parameter-shift rule](3.%20Parameter%20Shift/03_parameter_shift.ipynb)***
+* 3 ***[Gradients: The parameter-shift rule](1_explorer/03_parameter_shift.ipynb)***
   Implement your own simple parameter-shift rule for the Pauli rotation gates.
 
-* 4 ***Quantum transforms and noise: Energy dissipation***
+* 4 ***[Quantum transforms and noise: Energy dissipation](1_explorer/04_energy-dissipation.ipynb)***
   We use quantum transforms to add energy dissipation to every gate in a single-wire circuit. We study the effects of energy dissipation in the purity of the final states.
 
-* 5 ***Universality: Working with one qubit***
+* 5 ***[Universality: Working with one qubit](1_explorer/05_universality.ipynb)***
   In this challenge we will work with the definition of universality in one qubit
 
 ### Adventurer
-* 6 ***Differentiable ZNE: Global circuit folding***
+* 6 ***[Differentiable ZNE: Global circuit folding](2_adventurer/06_differentiable-zne.ipynb)***
   Implement a global circuit folding routine
 
-* 7 ***Fourier spectrum of quantum models - Distance in Fourier space***
+* 7 ***[Fourier spectrum of quantum models - Distance in Fourier space](2_adventurer/07_fourier-spectrum.ipynb)***
   In this challenge, we write a script that gives us a notion of how well a quantum model fits a given function.
 
-* 8 ***Gradients: A four-term parameter-shift rule***
+* 8 ***[Gradients: A four-term parameter-shift rule](2_adventurer/08_parameter-shift-CRX.ipynb)***
   Implement your own parameter-shift rule for the controlled X/Y/Z gates
 
-* 9 ***Quantum transforms and noise: A faulty superconducting device***
+* 9 ***[Quantum transforms and noise: A faulty superconducting device](2_adventurer/09_faulty-supercomputer.ipynb)***
   We use quantum transforms to model a faulty real-life superconducting device.
 
-* 10 ***Universality: U3 and CNOT decomposition***
-  This time there will be more qubits. In this challenge we willtry to define a given matrix with only U3 and CNOT gates.
+* 10 ***[Universality: U3 and CNOT decomposition](2_adventurer/py/10_universality.py)***
+  This time there will be more qubits. In this challenge we will try to define a given matrix with only U3 and CNOT gates.
 
 ### Pioneer
-* 11 **Differentiable ZNE: Error-mitigated VQE**
+* 11 **[Differentiable ZNE: Error-mitigated VQE](3_pioneer/11_vqe.ipynb)**
     Use ZNE to obtain a zero-noise estimate on the Hydrogen molecule ground state energy.
 
-* 12 **Fourier spectrum of quantum models - Coefficients and frequencies**
+* 12 **[Fourier spectrum of quantum models - Coefficients and frequencies](3_pioneer/12_fourier.ipynb)**
   We build a quantum model and use the Fourier module to extract its spectrum and Fourier coefficients.
 
-* 13 **Gradients: Adjoint differentiation**
+* 13 **[Gradients: Adjoint differentiation](3_pioneer/13_adjoint.ipynb)**
   Implement a seemingly harmless adjoint differentiation protocol!
 
-* 14 **Quantum transforms and noise: Maximizing fidelity**
+* 14 **[Quantum transforms and noise: Maximizing fidelity](3_pioneer/14_fidelity.ipynb)**
   We pioneer on the use of transforms to see how to best emulate a quantum circuit using a different one.
 
-* 15 **Universality: H, T and CNOT decomposition**
+* 15 **[Universality: H, T and CNOT decomposition](3_pioneer/py/15_universality.py)**
   Making use of different equivalences, you will be asked to construct a particular operator simply using H, T and CNOT...
 
 
 
 <br><br>
 
-#### How to Install
+#### How to Run:
 1. Create a pip environment called `codecamp`:
 ``python3 -m venv codecamp``
 2. Activate the environment:
