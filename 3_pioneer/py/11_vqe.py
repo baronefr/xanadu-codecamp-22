@@ -64,16 +64,24 @@ def qnode_ansatzes(d, scale_factors):
     """
     H, qubits = hydrogen_hamiltonian(d)
 
+    def cost_fn(param):
+        ansatz_template(param, wires=range(qubits))
+        return qml.expval(H)
+
     noise_gate = qml.DepolarizingChannel
     noise_strength = 0.05
 
-    # Put your code here #
-
     dev_ideal = qml.device("default.mixed", wires=qubits)
+    dev_noisy = qml.transforms.insert(noise_gate, noise_strength)(dev_ideal)
+
+    qnode_ideal = qml.QNode(cost_fn, dev_ideal)
+    qnode_noisy = qml.QNode(cost_fn, dev_noisy)
+    
+    qnodes_mitigated = [qml.transforms.fold_global(qnode_noisy, scale_factor) for scale_factor in scale_factors]
 
     return qnode_ideal, qnodes_mitigated
 
-def extrapolation(d, scale_factors, plot=False):
+def extrapolation(d, scale_factors):
     """Performs ZNE to obtain a zero-noise estimate on the ground state energy of H_2.
 
     Args:
@@ -93,6 +101,8 @@ def extrapolation(d, scale_factors, plot=False):
     mitigated_energies = [VQE(qnode) for qnode in qnodes_mitigated]
 
     # Put your code here #
+    coeffs = np.polyfit(scale_factors, mitigated_energies, 2)
+    zne_energy = coeffs[-1]
 
     return np.array([ideal_energy, zne_energy]).tolist()
 
