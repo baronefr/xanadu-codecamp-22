@@ -47,7 +47,7 @@
 * 9 ***[Quantum transforms and noise: A faulty superconducting device](2_adventurer/09_faulty-supercomputer.ipynb)***
   We use quantum transforms to model a faulty real-life superconducting device.
 
-* 10 ***[Universality: U3 and CNOT decomposition](2_adventurer/py/10_universality.py)***
+* 10 ***[Universality: U3 and CNOT decomposition](2_adventurer/10_universality.ipynb)***
   This time there will be more qubits. In this challenge we will try to define a given matrix with only U3 and CNOT gates.
 
 ### Pioneer
@@ -63,7 +63,7 @@
 * 14 **[Quantum transforms and noise: Maximizing fidelity](3_pioneer/14_fidelity.ipynb)**
   We pioneer on the use of transforms to see how to best emulate a quantum circuit using a different one.
 
-* 15 **[Universality: H, T and CNOT decomposition](3_pioneer/py/15_universality.py)**
+* 15 **[Universality: H, T and CNOT decomposition](3_pioneer/15_universality.ipynb)**
   Making use of different equivalences, you will be asked to construct a particular operator simply using H, T and CNOT...
 
 
